@@ -1,71 +1,58 @@
-# 机器学习、凸优化与分析基础学习仓库
+# My Quant & AI Learning Repo
 
-本仓库用于系统整理机器学习、凸优化与数学分析基础，目标是形成一条可执行的学习路径：  
-**RFA（分析基础） -> Alg（线代基础） -> CO（优化核心） -> ODE（动态系统） -> ML（算法应用）**。
+This repo contains the math and CS fundamentals for three main tracks:
+1. Stock Multi-Factor Quant
+2. AI Agent Development
+3. Option & Futures Quant (Stochastic Finance)
 
-## 模块定位
+---
 
-- `RFA`：实变函数与泛函分析（程其襄体系），提供测度、积分、空间与算子等底层数学工具。
-- `Alg`：线性代数（《这才是线性代数》学习路线），提供向量空间、线性映射、特征值与矩阵分解等基础工具。
-- `CO`：凸优化（Stephen Boyd 体系），提供优化建模、对偶理论与算法框架。
-- `ODE`：常微分方程（阿诺尔德体系），提供向量场、相流、稳定性与动力系统几何视角。
-- `ML`：图解机器学习体系，提供从基础模型到工程实践的算法与评估方法。
+## Repo Structure
+| Folder | Description |
+| :--- | :--- |
+| `Alg` | Linear Algebra, Numerical Methods, Basic Algorithms |
+| `CO` | Convex Optimization |
+| `ML` | Machine Learning / Deep Learning (in separate repo) |
+| `ODE` | Ordinary Differential Equations |
+| `PSTAT` | Probability & Mathematical Statistics (Mao Shisong) |
+| `RFA` | Real Analysis & Functional Analysis |
+| `TS` | Time Series Analysis |
 
-整体定位：服务于机器学习、深度学习、量化研究与运筹优化的完整底层知识体系。
+---
 
-## 仓库结构
+## Track 1: Stock Multi-Factor Quant
+**Core**: Statistics + Linear Models + Convex Optimization + Time Series
 
-```text
-.
-├── RFA/
-├── Alg/
-├── CO/
-├── ODE/
-└── ML/
-```
+1. `PSTAT`: Complete Chapters 3-6 (Multivariate Distributions, LLN, Parameter Estimation, Hypothesis Testing)
+2. `Alg`: Matrix Operations, PCA, Linear/Ridge Regression
+3. `CO`: Lasso for Factor Selection, Quadratic Programming for Portfolio Optimization
+4. `TS`: Factor Stability, Decay Analysis, Time-Series Properties of Returns
 
-### RFA（Real and Functional Analysis）
+---
 
-- 结构按两大篇组织：`real-analysis/` 与 `functional-analysis/`
-- 章节目录覆盖 11 个核心主题（集合、测度、Lebesgue 积分、Banach/Hilbert、算子谱等）
-- 详见 `RFA/README.md`
+## Track 2: AI Agent Development
+**Core**: Linear Algebra + Convex Optimization + LLM + Algorithms
 
-### CO（Convex Optimization）
+1. `Alg`: Vector Representations, Similarity, Graph Search/Planning
+2. `CO`: Optimization Basics (Loss Functions, Regularization, Optimizers)
+3. `ML`: Transformer Basics, Prompt Engineering, RAG
+4. Implement Tool Calling, Memory Modules, Task Decomposition
+5. `RFA` (optional): Functional-analysis perspective on function approximation
 
-- 按 Boyd《凸优化》全书主章节组织，不拆碎小节
-- 目录为 `01-introduction` 到 `11-interior-point-methods`，并含 `appendix`
-- 详见 `CO/README.md`
+---
 
-### Alg（Linear Algebra）
+## Track 3: Option & Futures Quant (Stochastic Finance)
+**Core**: Measure Theory + Probability + ODE + Convex Optimization
 
-- 按线性代数学习路线组织：向量与方程组、线性映射、行列式、向量空间、特征值、内积空间、矩阵分解
-- 当前 README 已细化为逐章学习内容清单
-- 详见 `Alg/README.md`
+1. `RFA`: Real Analysis (Measure, Measurable Functions, Lebesgue Integral)
+2. `PSTAT`: Probability Foundations + Advanced Measure-Theoretic Probability
+3. `ODE`: ODE Basics for SDE/PDE Numerical Methods
+4. `CO`: Model Calibration, Volatility Surface Fitting
+5. Stochastic Finance (Shiryaev): Martingale Pricing, Risk-Neutral Measure
 
-### ODE（Ordinary Differential Equations）
+---
 
-- 以阿诺尔德《常微分方程》为主线，强调几何直观与动力系统视角
-- 目录为 `01-fundamental-concepts` 到 `05-differential-equations-on-manifolds`
-- 当前 README 已按章节给出核心内容、前置基础与学习重点
-- 详见 `ODE/README.md`
-
-### ML（Machine Learning）
-
-- 按《图解机器学习》章节顺序组织
-- 覆盖模型、训练、评估、集成与工程实践
-- 详见 `ML/` 各章节目录与说明文件
-
-## 维护规范
-
-- 一级目录固定使用大写缩写：`ML`、`CO`、`RFA`、`Alg`、`ODE`
-- 子目录按各模块既定规范命名并保持稳定（例如 `CO` 使用连字符小写风格，`Alg` 使用编号下划线风格）
-- 每层目录保留 `.gitkeep`，确保空目录结构可被 Git 跟踪
-- 结构先行：优先维护统一目录框架，再逐步补充具体笔记内容
-
-## 建议学习方式
-
-1. 先学 `RFA`，补齐分析基础（测度、积分、空间与算子）。
-2. 再学 `Alg`，补齐线性代数基础（空间、变换、特征值、分解）。
-3. 再学 `CO`，建立优化问题建模与求解能力。
-4. 再学 `ODE`，建立连续动态系统与稳定性分析框架。
-5. 最后学 `ML`，把数学与优化能力落到具体算法和任务上。
+## Suggested Order by Goal
+- Multi-factor quant: `PSTAT -> Alg -> CO -> TS`
+- AI agent development: `Alg -> CO -> ML -> RFA(optional)`
+- Derivatives quant: `RFA -> PSTAT -> ODE -> CO`

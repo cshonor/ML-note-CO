@@ -1,7 +1,11 @@
+from pathlib import Path
+
 import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.arima_process import ArmaProcess
+
+IMG_DIR = Path(__file__).resolve().parent / "img"
 
 
 def simulate_ar(ar_params, n=600, burnin=200, seed=42):
@@ -40,14 +44,14 @@ def save_acf_pacf_figure(series, title, output_path, lags=30):
 
 
 def main():
-    base = "C:/Users/12392/Desktop/py/ML/TS/01_TS_CHARACTERISTICS"
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
 
     # AR(2): ACF 拖尾, PACF 2 阶截尾（理论特征）
     ar2 = simulate_ar([0.75, -0.25], seed=1)
     save_acf_pacf_figure(
         ar2,
         "AR(2) Example",
-        f"{base}/acf_pacf_ar2_example.png",
+        str(IMG_DIR / "acf_pacf_ar2_example.png"),
         lags=30,
     )
 
@@ -56,7 +60,7 @@ def main():
     save_acf_pacf_figure(
         ma2,
         "MA(2) Example",
-        f"{base}/acf_pacf_ma2_example.png",
+        str(IMG_DIR / "acf_pacf_ma2_example.png"),
         lags=30,
     )
 
@@ -65,13 +69,13 @@ def main():
     save_acf_pacf_figure(
         arma11,
         "ARMA(1,1) Example",
-        f"{base}/acf_pacf_arma11_example.png",
+        str(IMG_DIR / "acf_pacf_arma11_example.png"),
         lags=30,
     )
 
-    print("Saved: acf_pacf_ar2_example.png")
-    print("Saved: acf_pacf_ma2_example.png")
-    print("Saved: acf_pacf_arma11_example.png")
+    print("Saved: img/acf_pacf_ar2_example.png")
+    print("Saved: img/acf_pacf_ma2_example.png")
+    print("Saved: img/acf_pacf_arma11_example.png")
 
 
 if __name__ == "__main__":

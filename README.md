@@ -18,6 +18,8 @@ This repo contains the math and CS fundamentals for three main tracks:
 | `RFA` | Real Analysis & Functional Analysis |
 | `TS` | Time Series Analysis |
 
+**Markdown math typography** (subscripts / superscripts): see [`书写约定-上下标与公式.md`](./书写约定-上下标与公式.md). Optional batch helper: `python tools/format_md_subsup.py`.
+
 ---
 
 ## Track 1: Stock Multi-Factor Quant

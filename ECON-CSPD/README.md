@@ -2,6 +2,8 @@
 
 Notes for **Wooldridge**, *Econometric Analysis of Cross Section and Panel Data*.
 
+Chinese or mixed notes in this repo follow the workspace formula style guide: [`书写约定-上下标与公式.md`](../书写约定-上下标与公式.md).
+
 | Token | Meaning |
 | :--- | :--- |
 | **ECON** | Econometrics |

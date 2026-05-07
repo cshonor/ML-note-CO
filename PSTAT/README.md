@@ -29,6 +29,10 @@ PSTAT/
 
 **第6章** 已拆分为多节独立 Markdown，入口见：`PSTAT/06_PARAMETER_ESTIMATION/README.md`。
 
+**第7章** 已拆分为多节独立 Markdown，入口见：`PSTAT/07_HYPOTHESIS_TESTING/README.md`。
+
+**第8章** 已拆分为多节独立 Markdown，入口见：`PSTAT/08_ANOVA_REGRESSION/README.md`。
+
 ---
 
 ## 章节学习目标

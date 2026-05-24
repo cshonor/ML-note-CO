@@ -12,6 +12,8 @@ This repo contains the math and CS fundamentals for three main tracks:
 | :--- | :--- |
 | `Alg` | Linear Algebra, Numerical Methods, Basic Algorithms |
 | `CO` | Convex Optimization |
+| `ECON-CSPD` | Wooldridge cross-section & panel data (econometrics notes) |
+| `Econometrics` | General econometrics (placeholder; content TBD) |
 | `ML` | Machine Learning / Deep Learning (in separate repo) |
 | `ODE` | Ordinary Differential Equations |
 | `PSTAT` | Probability & Mathematical Statistics (Mao Shisong) |

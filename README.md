@@ -1,63 +1,73 @@
-# My Quant & AI Learning Repo
+# 量化与 AI 学习笔记仓库
 
-This repo contains the math and CS fundamentals for three main tracks:
-1. Stock Multi-Factor Quant
-2. AI Agent Development
-3. Option & Futures Quant (Stochastic Finance)
+个人量化与 AI 学习笔记（数学基础 + 三条学习路线）。
+
+本仓库围绕三条主线组织内容：
+1. 股票多因子量化
+2. AI Agent 开发
+3. 期权与期货量化（随机金融）
 
 ---
 
-## Repo Structure
-| Folder | Description |
+## 目录结构
+
+| 文件夹 | 说明 |
 | :--- | :--- |
-| `Alg` | Linear Algebra, Numerical Methods, Basic Algorithms |
-| `CO` | Convex Optimization |
-| `ECON-CSPD` | Wooldridge cross-section & panel data (econometrics notes) |
-| `Econometrics` | Wooldridge *Introductory Econometrics* (7th ed., 19 ch.) |
-| `ML` | Machine Learning / Deep Learning (in separate repo) |
-| `ODE` | Ordinary Differential Equations |
-| `PSTAT` | Probability & Mathematical Statistics (Mao Shisong) |
-| `RFA` | Real Analysis & Functional Analysis |
-| `TS` | Time Series Analysis |
+| [`Alg`](./Alg/README.md) | 线性代数、数值方法、基础算法 |
+| [`CO`](./CO/README.md) | 凸优化（Boyd & Vandenberghe 体系提纲） |
+| [`Econometrics`](./Econometrics/README.md) | 伍德里奇《计量经济学导论：现代观点》（第 7 版，19 章） |
+| [`ECON-CSPD`](./ECON-CSPD/README.md) | 伍德里奇《横截面与面板数据的计量经济分析》（第 2 版，22 章） |
+| [`ML`](./ML/) | 机器学习 / 深度学习（Grokking ML 风格章节笔记） |
+| [`ODE`](./ODE/) | 常微分方程 |
+| [`PSTAT`](./PSTAT/README.md) | 概率论与数理统计（茆诗松） |
+| [`RFA`](./RFA/) | 实分析与泛函分析 |
+| [`TS`](./TS/README.md) | 时间序列分析 |
 
-**Markdown math typography** (subscripts / superscripts): see [`书写约定-上下标与公式.md`](./书写约定-上下标与公式.md). Optional batch helper: `python tools/format_md_subsup.py`.
+**计量教材怎么选**：入门用 `Econometrics/`（OLS → 时间序列 → 面板 / IV）；截面与面板进阶用 `ECON-CSPD/`。
 
----
-
-## Track 1: Stock Multi-Factor Quant
-**Core**: Statistics + Linear Models + Convex Optimization + Time Series
-
-1. `PSTAT`: Complete Chapters 3-6 (Multivariate Distributions, LLN, Parameter Estimation, Hypothesis Testing)
-2. `Econometrics`: Wooldridge Intro Part I (Ch.1–9 OLS) → Part II–III with `TS` / `ECON-CSPD`
-3. `Alg`: Matrix Operations, PCA, Linear/Ridge Regression
-4. `CO`: Lasso for Factor Selection, Quadratic Programming for Portfolio Optimization
-5. `TS`: Factor Stability, Decay Analysis, Time-Series Properties of Returns
+**公式排版**：下标、上标见 [`书写约定-上下标与公式.md`](./书写约定-上下标与公式.md)。批量处理可运行：`python tools/format_md_subsup.py`。
 
 ---
 
-## Track 2: AI Agent Development
-**Core**: Linear Algebra + Convex Optimization + LLM + Algorithms
+## 路线一：股票多因子量化
 
-1. `Alg`: Vector Representations, Similarity, Graph Search/Planning
-2. `CO`: Optimization Basics (Loss Functions, Regularization, Optimizers)
-3. `ML`: Transformer Basics, Prompt Engineering, RAG
-4. Implement Tool Calling, Memory Modules, Task Decomposition
-5. `RFA` (optional): Functional-analysis perspective on function approximation
+**核心**：概率统计 + 计量经济学 + 线性模型 + 凸优化 + 时间序列
 
----
+| 步骤 | 文件夹 | 重点 |
+| :---: | :--- | :--- |
+| 1 | `PSTAT` | 第 3–6 章：多维分布、极限定理、估计、假设检验 |
+| 2 | `Econometrics` | 第一部分（第 1–9 章）：OLS、推断、异方差、模型设定 |
+| 3 | `Alg` + `ML` | 矩阵运算、PCA；线性 / Ridge 回归（见 `ML/03`、`ML/04`） |
+| 4 | `CO` | Lasso 因子筛选、二次规划组合优化 |
+| 5 | `TS` | 因子稳定性、衰减、收益时序性质 |
+| 6 | `Econometrics` | 第二、三部分（第 10–19 章）；可衔接 `ECON-CSPD` |
 
-## Track 3: Option & Futures Quant (Stochastic Finance)
-**Core**: Measure Theory + Probability + ODE + Convex Optimization
-
-1. `RFA`: Real Analysis (Measure, Measurable Functions, Lebesgue Integral)
-2. `PSTAT`: Probability Foundations + Advanced Measure-Theoretic Probability
-3. `ODE`: ODE Basics for SDE/PDE Numerical Methods
-4. `CO`: Model Calibration, Volatility Surface Fitting
-5. Stochastic Finance (Shiryaev): Martingale Pricing, Risk-Neutral Measure
+**建议顺序**：`PSTAT → Econometrics（第一部分）→ Alg → ML（回归）→ CO → TS → Econometrics（第二、三部分）→ ECON-CSPD（可选）`
 
 ---
 
-## Suggested Order by Goal
-- Multi-factor quant: `PSTAT -> Econometrics (Part I) -> Alg -> CO -> TS -> Econometrics (Part II–III)`
-- AI agent development: `Alg -> CO -> ML -> RFA(optional)`
-- Derivatives quant: `RFA -> PSTAT -> ODE -> CO`
+## 路线二：AI Agent 开发
+
+**核心**：线性代数 + 凸优化 + 大语言模型 + 算法
+
+1. `Alg`：向量表示、相似度、图搜索与规划
+2. `CO`：损失函数、正则化、优化器
+3. `ML`：Transformer 基础、Prompt、RAG
+4. 实践：工具调用、记忆模块、任务分解
+5. `RFA`（可选）：函数逼近的泛函分析视角
+
+**建议顺序**：`Alg → CO → ML → RFA（可选）`
+
+---
+
+## 路线三：期权与期货量化（随机金融）
+
+**核心**：测度论 + 概率论 + 常微分方程 + 凸优化
+
+1. `RFA`：实分析（测度、可测函数、勒贝格积分）
+2. `PSTAT`：概率基础与测度论概率进阶
+3. `ODE`：常微分方程，为 SDE / PDE 数值方法打基础
+4. `CO`：模型校准、波动率曲面拟合
+5. 随机金融（如 Shiryaev）：鞅定价、风险中性测度
+
+**建议顺序**：`RFA → PSTAT → ODE → CO`

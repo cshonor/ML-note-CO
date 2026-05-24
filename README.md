@@ -13,7 +13,7 @@ This repo contains the math and CS fundamentals for three main tracks:
 | `Alg` | Linear Algebra, Numerical Methods, Basic Algorithms |
 | `CO` | Convex Optimization |
 | `ECON-CSPD` | Wooldridge cross-section & panel data (econometrics notes) |
-| `Econometrics` | General econometrics (placeholder; content TBD) |
+| `Econometrics` | Wooldridge *Introductory Econometrics* (7th ed., 19 ch.) |
 | `ML` | Machine Learning / Deep Learning (in separate repo) |
 | `ODE` | Ordinary Differential Equations |
 | `PSTAT` | Probability & Mathematical Statistics (Mao Shisong) |
@@ -28,9 +28,10 @@ This repo contains the math and CS fundamentals for three main tracks:
 **Core**: Statistics + Linear Models + Convex Optimization + Time Series
 
 1. `PSTAT`: Complete Chapters 3-6 (Multivariate Distributions, LLN, Parameter Estimation, Hypothesis Testing)
-2. `Alg`: Matrix Operations, PCA, Linear/Ridge Regression
-3. `CO`: Lasso for Factor Selection, Quadratic Programming for Portfolio Optimization
-4. `TS`: Factor Stability, Decay Analysis, Time-Series Properties of Returns
+2. `Econometrics`: Wooldridge Intro Part I (Ch.1–9 OLS) → Part II–III with `TS` / `ECON-CSPD`
+3. `Alg`: Matrix Operations, PCA, Linear/Ridge Regression
+4. `CO`: Lasso for Factor Selection, Quadratic Programming for Portfolio Optimization
+5. `TS`: Factor Stability, Decay Analysis, Time-Series Properties of Returns
 
 ---
 
@@ -57,6 +58,6 @@ This repo contains the math and CS fundamentals for three main tracks:
 ---
 
 ## Suggested Order by Goal
-- Multi-factor quant: `PSTAT -> Alg -> CO -> TS`
+- Multi-factor quant: `PSTAT -> Econometrics (Part I) -> Alg -> CO -> TS -> Econometrics (Part II–III)`
 - AI agent development: `Alg -> CO -> ML -> RFA(optional)`
 - Derivatives quant: `RFA -> PSTAT -> ODE -> CO`

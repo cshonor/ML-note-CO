@@ -1,3 +1,3 @@
-# Chapter 17 — Ordered Discrete Choice
+# Chapter 16 — Ordered Discrete Choice
 
 Notes to be expanded: ordered logit/probit and interpretation.

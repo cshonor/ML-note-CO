@@ -11,8 +11,9 @@
 | **1** | `PSTAT_Basic` | 补完推导、捡回遗忘——全书 8 章稳步推进 |
 | **2** | `Shiryaev_Random_Finance` | 鞅、布朗运动、风险中性定价等量化核心 |
 | **3** | `Related_PDE` | Wilmott《金融工程中的偏微分方程》+ PDE 教程速查；BS、美式期权等按需 |
+| **—** | `00_Advanced_Prob_Reference` | **非主线**：Shiryaev《概率论》经典卷，卡壳查证明时用 |
 
-> 不贪多：PDE 先「挂靠」在随机过程下，遇到定价/数值场景再深挖，避免主线停滞。
+> 不贪多：PDE 与概率卷均「按需取学」，避免主线停滞。
 
 ---
 
@@ -20,10 +21,9 @@
 
 ```text
 PSTAT_Quant/
+├── 00_Advanced_Prob_Reference/  # 终极补充包：概率论经典卷（查证明，非必学）
 ├── Shiryaev_Random_Finance/     # 施利亚耶夫：随机过程 → 随机金融
-│   └── README.md
 ├── Related_PDE/                 # 关联模块：随机金融中的 PDE 推导与应用
-│   └── README.md
 └── README.md                    # 本说明
 ```
 

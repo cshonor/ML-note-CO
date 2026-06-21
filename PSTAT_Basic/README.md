@@ -69,7 +69,7 @@ PSTAT_Basic/
 1. **第一阶段**：01–04 章（概率论基础）  
 2. **第二阶段**：05–07 章（数理统计核心）  
 3. **第三阶段**：08 章；与 `Econometrics`、`TS` 对照复习  
-4. **延伸**：[`PSTAT_Quant`](../PSTAT_Quant/README.md) — Shiryaev 随机金融 + 关联 PDE
+4. **延伸**：[`PSTAT_Quant`](../PSTAT_Quant/README.md) — Shiryaev 随机金融；卡壳查 [`00_Advanced_Prob_Reference`](../PSTAT_Quant/00_Advanced_Prob_Reference/README.md)（非必学）
 
 ---
 

@@ -1,6 +1,6 @@
 # Shiryaev — 随机过程与随机金融
 
-**教材主线**：A. N. Shiryaev，《Probability》（测度论概率）及随机金融相关卷章；《Probability-2》等延伸读物按需选读。
+**教材主线**：A. N. Shiryaev，《Probability》及随机金融相关卷章（量化向笔记）；**完整证明**回查 [`00_Advanced_Prob_Reference`](../00_Advanced_Prob_Reference/README.md)（《概率论》经典卷，非必学）。
 
 **目标**：从滤波、鞅、布朗运动出发，建立**风险中性定价**与**随机积分**直觉，对接期权/期货量化（仓库路线三）。
 
@@ -40,4 +40,4 @@ Shiryaev_Random_Finance/
 1. 先确保 `PSTAT_Basic` 第 4 章（极限定理、特征函数）推导完整。  
 2. 并行阅读 `RFA` 测度论章节，为 Shiryaev 第 0 阶段做准备。  
 3. 阶段 5 起并行 [`Related_PDE`](../Related_PDE/README.md)：Wilmott 补 PDE 表述，Shiryaev 补概率推导。  
-4. 本目录笔记优先写：**定义 → 定理 → 证明要点 → 量化场景**。
+4. 本目录笔记优先写：**定义 → 定理 → 证明要点 → 量化场景**；严格证明缺步时查 [`00_Advanced_Prob_Reference`](../00_Advanced_Prob_Reference/README.md)，不必中断主线通读概率卷。

@@ -107,4 +107,4 @@ ECON-CSPD/
 
 概率与统计 → 回归入门 → 本书第 I–II 篇（OLS、IV、面板）→ 按需第 III–IV 篇。
 
-相关资源：英文原著 *Econometric Analysis of Cross Section and Panel Data*（2nd ed.）；同仓库 `PSTAT/`、`ML/`。
+相关资源：英文原著 *Econometric Analysis of Cross Section and Panel Data*（2nd ed.）；同仓库 `PSTAT_Basic/`、`ML/`。

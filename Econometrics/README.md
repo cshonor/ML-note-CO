@@ -71,11 +71,11 @@ Econometrics/
 2. **第二部分（10–12）**：与仓库 [`TS/`](../TS/) 时间序列笔记配合阅读。
 3. **第三部分（13–19）**：面板与 IV 后可衔接 [`ECON-CSPD/`](../ECON-CSPD/) 进阶教材。
 
-与 **Track 1（多因子量化）** 的关系：在 `PSTAT` 概率统计之后，本教材 Part I 对应因子回归与推断；Part II–III 对应因子时序与面板/工具变量进阶。
+与 **Track 1（多因子量化）** 的关系：在 `PSTAT_Basic` 概率统计之后，本教材 Part I 对应因子回归与推断；Part II–III 对应因子时序与面板/工具变量进阶。
 
 ---
 
 ## 相关资源
 
 - 英文原著：*Introductory Econometrics: A Modern Approach*（7th ed.），Jeffrey M. Wooldridge
-- 同仓库：`PSTAT/`、`TS/`、`ECON-CSPD/`、`ML/`（线性回归与正则化可作对照）
+- 同仓库：`PSTAT_Basic/`、`PSTAT_Quant/`、`TS/`、`ECON-CSPD/`、`ML/`（线性回归与正则化可作对照）

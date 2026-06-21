@@ -19,7 +19,8 @@
 | [`ECON-CSPD`](./ECON-CSPD/README.md) | 伍德里奇《横截面与面板数据的计量经济分析》（第 2 版，22 章） |
 | [`ML`](./ML/) | 机器学习 / 深度学习（Grokking ML 风格章节笔记） |
 | [`ODE`](./ODE/) | 常微分方程 |
-| [`PSTAT`](./PSTAT/README.md) | 概率论与数理统计（茆诗松） |
+| [`PSTAT_Basic`](./PSTAT_Basic/README.md) | 底层：茆诗松《概率论与数理统计教程》 |
+| [`PSTAT_Quant`](./PSTAT_Quant/README.md) | 上层：Shiryaev 随机金融 + 关联 PDE |
 | [`RFA`](./RFA/) | 实分析与泛函分析 |
 | [`TS`](./TS/README.md) | 时间序列分析 |
 
@@ -35,14 +36,14 @@
 
 | 步骤 | 文件夹 | 重点 |
 | :---: | :--- | :--- |
-| 1 | `PSTAT` | 第 3–6 章：多维分布、极限定理、估计、假设检验 |
+| 1 | `PSTAT_Basic` | 第 3–6 章：多维分布、极限定理、估计、假设检验 |
 | 2 | `Econometrics` | 第一部分（第 1–9 章）：OLS、推断、异方差、模型设定 |
 | 3 | `Alg` + `ML` | 矩阵运算、PCA；线性 / Ridge 回归（见 `ML/03`、`ML/04`） |
 | 4 | `CO` | Lasso 因子筛选、二次规划组合优化 |
 | 5 | `TS` | 因子稳定性、衰减、收益时序性质 |
 | 6 | `Econometrics` | 第二、三部分（第 10–19 章）；可衔接 `ECON-CSPD` |
 
-**建议顺序**：`PSTAT → Econometrics（第一部分）→ Alg → ML（回归）→ CO → TS → Econometrics（第二、三部分）→ ECON-CSPD（可选）`
+**建议顺序**：`PSTAT_Basic → Econometrics（第一部分）→ Alg → ML（回归）→ CO → TS → Econometrics（第二、三部分）→ ECON-CSPD（可选）`
 
 ---
 
@@ -65,9 +66,9 @@
 **核心**：测度论 + 概率论 + 常微分方程 + 凸优化
 
 1. `RFA`：实分析（测度、可测函数、勒贝格积分）
-2. `PSTAT`：概率基础与测度论概率进阶
-3. `ODE`：常微分方程，为 SDE / PDE 数值方法打基础
-4. `CO`：模型校准、波动率曲面拟合
-5. 随机金融（如 Shiryaev）：鞅定价、风险中性测度
+2. `PSTAT_Basic`：概率统计基础（茆诗松 1–8 章）
+3. `PSTAT_Quant`：Shiryaev 随机过程与随机金融；`Related_PDE` 按需补 BS / Feynman–Kac
+4. `ODE`：常微分方程，为 SDE / PDE 数值方法打基础
+5. `CO`：模型校准、波动率曲面拟合
 
-**建议顺序**：`RFA → PSTAT → ODE → CO`
+**建议顺序**：`RFA → PSTAT_Basic（1–4 章）→ PSTAT_Quant → ODE → CO`

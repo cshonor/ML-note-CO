@@ -12,7 +12,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET_DIRS = [ROOT / "PSTAT", ROOT / "TS", ROOT / "RFA", ROOT / "ECON-CSPD", ROOT / "Alg"]
+TARGET_DIRS = [
+    ROOT / "PSTAT_Basic",
+    ROOT / "PSTAT_Quant",
+    ROOT / "TS",
+    ROOT / "RFA",
+    ROOT / "ECON-CSPD",
+    ROOT / "Alg",
+]
 SKIP_SUB_COUNT = 12  # files with >= this many <sub> are skipped (e.g. ch4 already done)
 
 TRIPLE_FENCE = re.compile(r"^```")

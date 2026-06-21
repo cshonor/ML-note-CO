@@ -10,7 +10,7 @@
 | :---: | :--- | :--- |
 | **1** | `PSTAT_Basic` | 补完推导、捡回遗忘——全书 8 章稳步推进 |
 | **2** | `Shiryaev_Random_Finance` | 鞅、布朗运动、风险中性定价等量化核心 |
-| **3** | `Related_PDE` | 仅收录随机金融**用到**的 PDE（如 BS 方程、Feynman–Kac） |
+| **3** | `Related_PDE` | Wilmott《金融工程中的偏微分方程》+ PDE 教程速查；BS、美式期权等按需 |
 
 > 不贪多：PDE 先「挂靠」在随机过程下，遇到定价/数值场景再深挖，避免主线停滞。
 
@@ -48,7 +48,7 @@ PSTAT_Quant/
 | `TS` | 平稳性、谱与随机过程的时间序列视角 |
 | `Econometrics` / `ECON-CSPD` | 统计推断与面板/截面方法并行 |
 
-**建议顺序**：`PSTAT_Basic（1–4 章稳）→ PSTAT_Basic（5–8 章）→ Shiryaev_Random_Finance → Related_PDE（按需）`
+**建议顺序**：`PSTAT_Basic（1–4 章稳）→ PSTAT_Basic（5–8 章）→ Shiryaev_Random_Finance → Related_PDE（Wilmott，与 Shiryaev 阶段 3–5 并行）`
 
 ---
 

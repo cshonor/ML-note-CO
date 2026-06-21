@@ -15,7 +15,7 @@
 | 2 | 布朗运动、二次变差 | 连续时间随机过程入门 |
 | 3 | 随机积分（Itô）、Itô 公式 | 定价模型的核心运算 |
 | 4 | Girsanov 定理、风险中性测度 | 无套利定价框架 |
-| 5 | 期权定价、波动率、数值模拟 | 对接 `Related_PDE`、`CO` |
+| 5 | 期权定价、波动率、数值模拟 | 对接 [`Related_PDE`](../Related_PDE/README.md)（Wilmott：BS、美式期权 PDE）、`CO` |
 
 ---
 
@@ -39,4 +39,5 @@ Shiryaev_Random_Finance/
 
 1. 先确保 `PSTAT_Basic` 第 4 章（极限定理、特征函数）推导完整。  
 2. 并行阅读 `RFA` 测度论章节，为 Shiryaev 第 0 阶段做准备。  
-3. 本目录笔记优先写：**定义 → 定理 → 证明要点 → 量化场景**。
+3. 阶段 5 起并行 [`Related_PDE`](../Related_PDE/README.md)：Wilmott 补 PDE 表述，Shiryaev 补概率推导。  
+4. 本目录笔记优先写：**定义 → 定理 → 证明要点 → 量化场景**。

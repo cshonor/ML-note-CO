@@ -1,0 +1,7 @@
+﻿# CO - 凸优化（Stephen Boyd 斯坦福经典教材）
+
+> **教材来源**：Stephen Boyd & Lieven Vandenberghe《Convex Optimization》（Cambridge）
+
+本仓库为斯坦福《凸优化》全书系统学习笔记仓库，
+分为理论基础、实际应用、算法实现三大板块，
+是机器学习、深度学习、量化金融、运筹优化的核心必修数学工具。
